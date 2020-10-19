@@ -5,24 +5,24 @@
 #include <string>
 
 class Empregado {
-	
-  public:
-    double salarioHora;  
-    double quotaMensalVendas;  
+
+  private:
+  const double salarioHora;  
+ const double quotaMensalVendas;  
 
 
     double pagamentoMes(double horasTrabalhadas) {
- 
-      double t = horasTrabalhadas;
-	  
+
+      double total_de_horas = horasTrabalhadas;
+
 	  //Cálculo de hora extra (+50% se horasTrabalhadas > 8)
       if (horasTrabalhadas > 8) {
-        double x = horasTrabalhadas - 8;
-        t += x / 2;
-      }
-	  return t * salarioHora;
+        double hora_extra = horasTrabalhadas - 8;
+        total_de_horas += hora_extra / 2;
+      } 
+	  return total_de_horas * salarioHora;
     }
-	
+
 };
 
 #endif
