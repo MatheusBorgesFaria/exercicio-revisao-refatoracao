@@ -8,19 +8,21 @@ class Empregado {
 
   private:
   const double salarioHora;  
- const double quotaMensalVendas;  
+  const double quotaMensalVendas;  
 
 
-    double pagamentoMes(double horasTrabalhadas) {
+  double pagamentoDia(double horasTrabalhadas) {
 
-      double total_de_horas = horasTrabalhadas;
+     double totalDeHorasTrabalhadas = horasTrabalhadas;
+     int jornadaNormalDeTrabalho = 8;
+     int divisorHoraExtra = 2
 
 	  //Cálculo de hora extra (+50% se horasTrabalhadas > 8)
-      if (horasTrabalhadas > 8) {
-        double hora_extra = horasTrabalhadas - 8;
-        total_de_horas += hora_extra / 2;
-      } 
-	  return total_de_horas * salarioHora;
+      if (horasTrabalhadas > jornadaNormalDeTrabalho) {
+        double hora_extra = horasTrabalhadas - jornadaNormalDeTrabalho;
+        totalDeHorasTrabalhadas += hora_extra / divisorHoraExtra;
+      }
+	  return totalDeHorasTrabalhadas * salarioHora;
     }
 
 };
