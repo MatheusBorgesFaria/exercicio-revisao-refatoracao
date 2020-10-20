@@ -11,5 +11,6 @@ class Empregado {
     double salarioHora;
   public:  
     double pagamentoMes(double horasTrabalhadas) ;
+    ~Empregado(){};
 };
 #endif

@@ -10,4 +10,13 @@ double Vendedor::quotaTotalAnual() {
   	return quotaMensalVendas * mesesDoAno;
 	}
 
+std::string Vendedor::getNome(){
+	return nome;
+}
 
+double Vendedor:: getQuotaMensalVendas (){
+	return quotaMensalVendas;
+}
+double Vendedor:: getSalarioHora (){
+	return salarioHora;
+}

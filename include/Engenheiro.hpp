@@ -7,6 +7,7 @@ class Engenheiro : public Empregado {
 	  int projetos;
     public:
 	  Engenheiro(std::string nome_, double salarioHora_, int projetos_);
+    ~Engenheiro(){};
     std::string getNome();
     double getSlarioHora();
     int getProjetos();

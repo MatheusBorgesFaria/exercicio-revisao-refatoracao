@@ -10,5 +10,8 @@ class Vendedor : public Empregado {
 	Vendedor(std::string nome_, double salarioHora_, double quotaMensalVendas_);
 	double quotaTotalAnual();
     ~Vendedor(){};
+	std::string getNome();
+	double getSalarioHora();
+	double getQuotaMensalVendas();
 };
 
