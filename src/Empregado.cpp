@@ -1,21 +1,16 @@
-#ifndef EMPREGADO_H
-#define EMPREGADO_H
+#include "Empregado.hpp"
 
-#include <iostream>
-#include <string>
-
-class Empregado {
-
-  private:
-  const double salarioHora;  
-  const double quotaMensalVendas;  
+Empregado::Empregado(std::string nome_, double salarioHora_){
+    nome = nome_ ;
+    salarioHora = salarioHora_;
+}
 
 
-  double pagamentoDia(double horasTrabalhadas) {
+double Empregado::pagamentoMes(double horasTrabalhadas) {
 
      double totalDeHorasTrabalhadas = horasTrabalhadas;
      int jornadaNormalDeTrabalho = 8;
-     int divisorHoraExtra = 2
+     int divisorHoraExtra = 2;
 
 	  //Cálculo de hora extra (+50% se horasTrabalhadas > 8)
       if (horasTrabalhadas > jornadaNormalDeTrabalho) {
@@ -24,7 +19,3 @@ class Empregado {
       }
 	  return totalDeHorasTrabalhadas * salarioHora;
     }
-
-};
-
-#endif
