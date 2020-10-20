@@ -1,30 +1,25 @@
 #include "Engenheiro.hpp"
 #include "Vendedor.hpp"
 
+void printEngenheiro (Engenheiro & eng, double horas){
+  std::cout << "Nome: " << eng.getNome() << std::endl;
+  std::cout << "Salario Mes: " << eng.pagamentoMes(horas) << std::endl;
+  std::cout << "Projetos: " << eng.getProjetos() << std::endl;
+  std::cout << std::endl;
+}
+
 int main() {
   Engenheiro eng1 ("Joao Snow", 35, 3);
-  std::cout<<"teste";
-/*
-  std::cout << "Nome: " << eng1.nome << std::endl;
-  std::cout << "Salario Mes: " << eng1.pagamentoMes(9.5) << std::endl;
-  std::cout << "Projetos: " << eng1.projetos << std::endl;
-  std::cout << std::endl;
+  printEngenheiro(eng1, 9.5);
+  
   
   Engenheiro eng2("Daniela Targaryen", 30, 1);
- 
-  std::cout << "Nome: " << eng2.nome << std::endl;
-  std::cout << "Salario Mes: " << eng2.pagamentoMes(8) << std::endl;
-  std::cout << "Projetos: " << eng2.projetos << std::endl;  
-  std::cout << std::endl;
+  printEngenheiro(eng2, 8);
   
   Engenheiro eng3 ("Bruno Stark", 30, 2);
+  printEngenheiro(eng3, 8);
   
-  std::cout << "Nome: " << eng3.nome << std::endl;
-  std::cout << "Salario Mes: " << eng3.pagamentoMes(8) << std::endl;
-  std::cout << "Projetos: " << eng3.projetos << std::endl;  
-  std::cout << std::endl;
-  
-  
+  /*
   Vendedor vend1("Tonho Lannister", 20, 5000);
 
   

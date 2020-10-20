@@ -1,3 +1,6 @@
+#Funciona para as pastas src, include e bin
+#
+
 CXX	      := g++
 CXX_FLAGS := -std=c++17 -Wall -Wextra -ggdb
 

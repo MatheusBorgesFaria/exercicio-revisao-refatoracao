@@ -6,7 +6,8 @@ Vendedor::Vendedor(std::string nome_, double salarioHora_, double quotaMensalVen
 		quotaMensalVendas =   quotaMensalVendas_; 
 	} 
 double Vendedor::quotaTotalAnual() {
-  	return quotaMensalVendas * 12;
+	int mesesDoAno = 12;
+  	return quotaMensalVendas * mesesDoAno;
 	}
 
 
