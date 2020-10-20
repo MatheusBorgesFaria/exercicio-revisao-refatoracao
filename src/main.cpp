@@ -1,9 +1,9 @@
-//#include "Engenheiro.cpp"
-#include "Vendedor.cpp"
+#include "Engenheiro.hpp"
+#include "Vendedor.hpp"
 
 int main() {
-  //Engenheiro eng1 ();
-  //Engenheiro eng1 ("Joao Snow", 35, 3);
+  Engenheiro eng1 ("Joao Snow", 35, 3);
+  std::cout<<"teste";
 /*
   std::cout << "Nome: " << eng1.nome << std::endl;
   std::cout << "Salario Mes: " << eng1.pagamentoMes(9.5) << std::endl;

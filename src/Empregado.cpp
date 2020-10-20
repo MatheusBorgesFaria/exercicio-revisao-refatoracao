@@ -1,9 +1,5 @@
 #include "Empregado.hpp"
 
-Empregado::Empregado(std::string nome_, double salarioHora_){
-    nome = nome_ ;
-    salarioHora = salarioHora_;
-}
 
 
 double Empregado::pagamentoMes(double horasTrabalhadas) {

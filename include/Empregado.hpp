@@ -11,6 +11,5 @@ class Empregado {
     double salarioHora;
   public:  
     double pagamentoMes(double horasTrabalhadas) ;
-    Empregado(std::string nome_, double salarioHora_);
 };
 #endif
