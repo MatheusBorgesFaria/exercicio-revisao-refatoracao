@@ -1,8 +1,8 @@
 #include "Empregado.hpp"
 
 
-
-double Empregado::pagamentoMes(double horasTrabalhadas) {
+// Operacao:
+double Empregado::pagamentoDia(double horasTrabalhadas) {
 
      double totalDeHorasTrabalhadas = horasTrabalhadas;
      int jornadaNormalDeTrabalho = 8;

@@ -5,12 +5,14 @@
 #include <string>
 
 class Empregado {
-
+  //Atributos
   protected:
     std::string nome; 
     double salarioHora;
+
+  //Metodos
   public:  
-    double pagamentoMes(double horasTrabalhadas) ;
+    double pagamentoDia(double horasTrabalhadas) ;
     ~Empregado(){};
 };
 #endif

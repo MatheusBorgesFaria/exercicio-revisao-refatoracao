@@ -2,10 +2,12 @@
 #define ENGENHEIRO_H
 #include "Empregado.hpp"
 class Engenheiro : public Empregado {
-
+  //Atributos
   private: 
 	  int projetos;
-    public:
+
+  //Metodos
+  public:
 	  Engenheiro(std::string nome_, double salarioHora_, int projetos_);
     ~Engenheiro(){};
     std::string getNome();
